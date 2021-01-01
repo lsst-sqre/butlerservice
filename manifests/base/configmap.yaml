@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: butlerservice
+data:
+  # These configurations are injected as environment variables into the
+  # app container.
+  SAFIR_NAME: "butlerservice"
+  SAFIR_PROFILE: "production"
+  SAFIR_LOGGER: "butlerservice"
+  SAFIR_LOG_LEVEL: "INFO"
