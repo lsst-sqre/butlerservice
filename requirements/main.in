@@ -1,0 +1,17 @@
+# Editable runtime dependencies (equivalent to install_requires)
+# Add direct runtime dependencies here, as well as implicit dependencies
+# with constrained versions.
+#
+# After editing, update requirements/main.txt by running:
+#     make update-deps
+
+aiohttp~=3.7
+astropy~=4.1
+click~=7.1
+graphql-server[aiohttp]~=3.0.0b2
+importlib_metadata~=2.0
+safir~=0.1
+git+git://github.com/lsst/daf_butler.git@master#daf_butler
+
+# Extra dependencies that should have been included by above packages
+jinja2~=2.11  # Needed by graphql-server

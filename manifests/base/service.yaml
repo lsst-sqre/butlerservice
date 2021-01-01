@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: butlerservice
+  labels:
+    app: butlerservice
+spec:
+  ports:
+    - name: butlerservice-http
+      protocol: TCP
+      port: 8080
+      targetPort: app
+  selector:
+    name: butlerservice
